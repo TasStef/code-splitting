@@ -13,8 +13,8 @@ const Page2Component = React.lazy(() => new Promise(resolve => {
 const Page3Component = React.lazy(() => import('./Components/Page3'));
 
 class App extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             route: 'page1',
         }
